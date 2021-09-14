@@ -60,6 +60,13 @@ public class Student {
         viewBalance();
     }
 
+    @Override
+    public String toString() {
+        return "Name: " + firstName + " " + lastName +
+                "\nID: " + studentID + "\nCourses: " + courses +
+                "\nTuition Balance: $" + tuitionBalance;
+    }
+
     public String showInfo() {
         return "Name: " + firstName + " " + lastName +
                 "\nID: " + studentID + "\nCourses: " + courses +
